@@ -1,0 +1,16 @@
+{
+  "name": "zkon-test",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prepare": "node build-mina-fungible-token.js && cd node_modules/mina-fungible-token && npm run build",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "zkon-sdk": "git://github.com/ZKON-Network/provable-data-sdk.git#main"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1"
+  }
+}
